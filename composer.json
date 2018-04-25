@@ -1,0 +1,26 @@
+{
+    "name": "iquan/curl",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "韦源泉",
+            "email": "admin@iquan.club"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "IQuanCurl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IQuanCurl\\IQuanCurlServiceProvider"
+            ],
+            "aliases": {
+                "IQuanCurl": "IQuanCurl\\IQuanCurlFacade"
+            }
+        }
+    }
+}
